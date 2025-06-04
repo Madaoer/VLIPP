@@ -26,13 +26,10 @@
 ## Citation
 
 ```
-@misc{yang2025vlippphysicallyplausiblevideo,
-      title={VLIPP: Towards Physically Plausible Video Generation with Vision and Language Informed Physical Prior}, 
-      author={Xindi Yang and Baolu Li and Yiming Zhang and Zhenfei Yin and Lei Bai and Liqian Ma and Zhiyong Wang and Jianfei Cai and Tien-Tsin Wong and Huchuan Lu and Xu Jia},
-      year={2025},
-      eprint={2503.23368},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.23368}, 
+@article{yang2025vlipp,
+  title={VLIPP: Towards Physically Plausible Video Generation with Vision and Language Informed Physical Prior},
+  author={Yang, Xindi and Li, Baolu and Zhang, Yiming and Yin, Zhenfei and Bai, Lei and Ma, Liqian and Wang, Zhiyong and Cai, Jianfei and Wong, Tien-Tsin and Lu, Huchuan and others},
+  journal={arXiv preprint arXiv:2503.23368},
+  year={2025}
 }
 ```
