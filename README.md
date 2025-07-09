@@ -82,8 +82,9 @@ bash scripts/cached_example/mug_fall.sh
 
 Coarse motion trajectories planned by the VLM can serve as motion priors, guiding video-diffusion models to generate physically plausible videos.
 
+
 <p align="center">
-    <video src="https://github.com/user-attachments/assets/3220de59-72a0-49a7-8442-fa1324f484ee" controls autoplay loop muted></video>
+    <video src="https://github.com/user-attachments/assets/301ac1c7-87cf-4167-84b5-d4f4a015efb9" controls autoplay loop muted></video>
 </p>
 
 ## Citation
