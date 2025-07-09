@@ -1,0 +1,181 @@
+{
+    "recaption": "In a stripped-down kitchen featuring a calm teal background, brilliant orange juice cascades steadily from above into a see-through glass placed on a pale countertop. The pour is fluid and constant, meeting the glass with rhythmic splashes. As the volume rises, the juice rotates lightly, sending tiny bubbles and ripples across its surface. The scene contains no extra items, centering completely on the juice’s flow and its encounter with the glass.",
+    "key_physic_object": "orange juice.",
+    "category": "Fluid Dynamics",
+    "exp_name": "pour_juice",
+    "first_frame": "cached_example/first_frames/pour_orange.jpg",
+    "seg_mask_path": "cached_example/detections/pour_juice/seg/grounded_sam2_merge_mask.jpg",
+    "annotations": [
+        {
+            "class_name": "orange juice",
+            "bbox": [
+                271,
+                319,
+                170,
+                103
+            ]
+        }
+    ],
+    "box_format": "xywh",
+    "vlm_planning": {
+        "Reasoning": "Reasoning:\n                Step1-Analysis Caption and determine the physical laws to be satisfied: The caption describes a scene of orange juice being poured into a glass. The main physical law in play is fluid mechanics, where poured juice creates bubbles and ripples as it settles into the glass.\n                Step2-Analyze the impact of this physical law: As the juice is poured, the surface of the juice in the glass will rise. The stream will have a constant width impacting the height of the liquid. Bubbles and ripples on the surface suggest minor changes in the contour of the liquid's surface while the bottom remains fixed.\n                Step3-Analyze the impact on box coordinates: The box's y-coordinate representing the top boundary decreases as the liquid level rises. The width of the box remains consistent with the glass's width, and the height of the box increases as the glass fills up.\n                Predict the coordinates for the next 13 frames:\n                Frame 1: [{'id': 0, 'name': 'orange juice', 'box': [271, 319, 170, 103]}]\n                Frame 2: [{'id': 0, 'name': 'orange juice', 'box': [271, 310, 170, 112]}]\n                Frame 3: [{'id': 0, 'name': 'orange juice', 'box': [271, 303, 170, 119]}]\n                Frame 4: [{'id': 0, 'name': 'orange juice', 'box': [271, 296, 170, 126]}]\n                Frame 5: [{'id': 0, 'name': 'orange juice', 'box': [271, 288, 170, 134]}]\n                Frame 6: [{'id': 0, 'name': 'orange juice', 'box': [271, 282, 170, 140]}]\n                Frame 7: [{'id': 0, 'name': 'orange juice', 'box': [271, 275, 170, 147]}]\n                Frame 8: [{'id': 0, 'name': 'orange juice', 'box': [271, 268, 170, 153]}]\n                Frame 9: [{'id': 0, 'name': 'orange juice', 'box': [271, 261, 170, 160]}]\n                Frame 10: [{'id': 0, 'name': 'orange juice', 'box': [271, 255, 170, 166]}]\n                Frame 11: [{'id': 0, 'name': 'orange juice', 'box': [271, 248, 170, 173]}]\n                Frame 12: [{'id': 0, 'name': 'orange juice', 'box': [271, 241, 170, 180]}]\n                Frame 13: [{'id': 0, 'name': 'orange juice', 'box': [271, 234, 170, 187]}]",
+        "Frames": {
+            "1": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        319,
+                        170,
+                        103
+                    ]
+                }
+            ],
+            "2": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        310,
+                        170,
+                        112
+                    ]
+                }
+            ],
+            "3": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        303,
+                        170,
+                        119
+                    ]
+                }
+            ],
+            "4": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        296,
+                        170,
+                        126
+                    ]
+                }
+            ],
+            "5": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        288,
+                        170,
+                        134
+                    ]
+                }
+            ],
+            "6": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        282,
+                        170,
+                        140
+                    ]
+                }
+            ],
+            "7": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        275,
+                        170,
+                        147
+                    ]
+                }
+            ],
+            "8": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        268,
+                        170,
+                        153
+                    ]
+                }
+            ],
+            "9": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        261,
+                        170,
+                        160
+                    ]
+                }
+            ],
+            "10": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        255,
+                        170,
+                        166
+                    ]
+                }
+            ],
+            "11": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        248,
+                        170,
+                        173
+                    ]
+                }
+            ],
+            "12": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        241,
+                        170,
+                        180
+                    ]
+                }
+            ],
+            "13": [
+                {
+                    "id": 0,
+                    "name": "orange juice",
+                    "box": [
+                        271,
+                        234,
+                        170,
+                        187
+                    ]
+                }
+            ]
+        }
+    }
+}

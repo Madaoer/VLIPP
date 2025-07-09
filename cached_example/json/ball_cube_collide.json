@@ -1,0 +1,320 @@
+{
+    "recaption": "A wooden ball travels across a sleek white tabletop and slowly approaches a motionless iron cube. Upon impact, the ball rebounds, and the heavier cube is pushed backward a little. This interaction clearly represents the transfer of momentum and kinetic energy.",
+    "key_physic_object": "wooden ball. iron cube.",
+    "category": "Solid Mechanics",
+    "exp_name": "collide",
+    "first_frame": "cached_example/first_frames/ball_cube_collide.jpg",
+    "seg_mask_path": "cached_example/detections/ball_cube_collide/seg/grounded_sam2_merge_mask.jpg",
+    "annotations": [
+        {
+            "class_name": "wooden ball",
+            "bbox": [
+                137,
+                253,
+                125,
+                122
+            ]
+        },
+        {
+            "class_name": "iron cube",
+            "bbox": [
+                454,
+                254,
+                129,
+                123
+            ]
+        }
+    ],
+    "box_format": "xywh",
+    "vlm_planning": {
+        "Reasoning": "Reasoning: \n Step1-Identify objects and masses: The wooden ball (lighter) is at [137, 253, 125, 122]; the iron cube (heavier) is at [454, 254, 129, 123]. \n Step2-Initial motion assumptions: The ball rolls right with constant horizontal speed; the cube is initially stationary. \n Step3-Compute pre-collision path: The horizontal gap is 192 px. With a 32 px/frame ball speed, edge contact (no overlap) occurs in frame 7 when the ball’s right edge reaches x = 454. \n Step4-Collision response by momentum conservation: Because the cube is much heavier, it gains a small rightward velocity; the ball reverses direction and loses more speed. Chosen post-impact velocities: cube +4,+3,+2,+1,0,0 px per frame; ball –20,–18,–15,–12,0,0 px per frame, ensuring no overlap after frame 7. \n Step5-Verify constraints: All boxes stay inside the 720×480 frame, maintain IDs, never overlap after contact, and motion changes only after bounding-box contact. \n\n  Frame 1: [{'id': 0, 'name': 'ball', 'box': [137, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 2: [{'id': 0, 'name': 'ball', 'box': [169, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 3: [{'id': 0, 'name': 'ball', 'box': [201, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 4: [{'id': 0, 'name': 'ball', 'box': [233, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 5: [{'id': 0, 'name': 'ball', 'box': [265, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 6: [{'id': 0, 'name': 'ball', 'box': [297, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 7: [{'id': 0, 'name': 'ball', 'box': [329, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [454, 254, 129, 123]}] \n Frame 8: [{'id': 0, 'name': 'ball', 'box': [309, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [458, 254, 129, 123]}] \n Frame 9: [{'id': 0, 'name': 'ball', 'box': [291, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [461, 254, 129, 123]}] \n Frame 10: [{'id': 0, 'name': 'ball', 'box': [276, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [463, 254, 129, 123]}] \n Frame 11: [{'id': 0, 'name': 'ball', 'box': [264, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [464, 254, 129, 123]}] \n Frame 12: [{'id': 0, 'name': 'ball', 'box': [264, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [472, 254, 129, 123]}] \n Frame 13: [{'id': 0, 'name': 'ball', 'box': [264, 253, 125, 122]}, {'id': 1, 'name': 'cube', 'box': [472, 254, 129, 123]}]",
+        "Frames": {
+            "1": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        137,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "2": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        169,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "3": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        201,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "4": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        233,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "5": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        265,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "6": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        297,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "7": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        329,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        454,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "8": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        309,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        458,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "9": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        291,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        461,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "10": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        276,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        463,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "11": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        264,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        464,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "12": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        264,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        464,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ],
+            "13": [
+                {
+                    "id": 0,
+                    "name": "wooden ball",
+                    "box": [
+                        264,
+                        253,
+                        125,
+                        122
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "iron cube",
+                    "box": [
+                        464,
+                        254,
+                        129,
+                        123
+                    ]
+                }
+            ]
+        }
+    }
+}

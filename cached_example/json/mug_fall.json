@@ -1,0 +1,421 @@
+{
+    "recaption": "The mug, made of yellow ceramic, fell at high speed and crashed onto the table, breaking into several big pieces and many tiny splinters.",
+    "key_physic_object": "fragment.",
+    "category": "Solid Mechanics",
+    "exp_name": "mug_fall",
+    "first_frame": "cached_example/first_frames/mug_fall.jpg",
+    "seg_mask_path": "cached_example/detections/mug_fall/seg/grounded_sam2_merge_mask.jpg",
+    "annotations": [
+        {
+            "class_name": "fragment",
+            "bbox": [
+                257,
+                114,
+                245,
+                206
+            ]
+        }
+    ],
+    "box_format": "xywh",
+    "vlm_planning": {
+        "Reasoning": "Reasoning: \n Step1 - Analysis Caption and determine the physical laws to be satisfied: \n From the caption, the yellow ceramic mug undergoes free fall and breaks upon impact with the tabletop. Therefore, this scenario involves principles of gravity, acceleration, impact, and fragmentation physics. \n Step2 - Analyze the impact of this physical law: \n The mug accelerates due to gravity towards the tabletop, then breaks upon impact. The fragmentation and debris spread result in a change of state from a single object to multiple fragments and follow the principles of momentum and energy conservation during the collision. \n Step3 - Analyze the impact on box coordinates: \n Initially, the mug will drop vertically due to gravity, causing a rapid increase in the box's y-coordinate. Upon collision with the table, the mug shatters into multiple fragments. Motion along the table surface will occur, distributing pieces. Fragments spread outward from the point of impact. As debris scatters, the fragments are represented by bounding boxes moving in random directions. \n Predict the coordinates for the next 13 frames: \n Frame 1: [{\"id\": 0, \"name\": \"mug\", \"box\": [257, 115, 245, 205]}] \n Frame 2: [{\"id\": 0, \"name\": \"mug\", \"box\": [257, 145, 245, 205]}] \n Frame 3: [{\"id\": 0, \"name\": \"mug\", \"box\": [257, 175, 245, 205]}] \n Frame 4: [{\"id\": 0, \"name\": \"mug\", \"box\": [257, 205, 245, 205]}] \n Frame 5: [{\"id\": 0, \"name\": \"mug\", \"box\": [257, 235, 245, 190]}] \n Frame 6: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [280, 278, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [430, 280, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [200, 305, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [300, 408, 140, 60]}] \n Frame 7: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [270, 290, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [440, 295, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [185, 320, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [305, 410, 140, 60]}] \n Frame 8: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [260, 300, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [450, 310, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [175, 335, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [308, 412, 140, 60]}] \n Frame 9: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [250, 308, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [455, 325, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [165, 350, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [312, 413, 140, 60]}] \n Frame 10: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [240, 315, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [458, 335, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [160, 365, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [315, 414, 140, 60]}] \n Frame 11: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [230, 320, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [460, 345, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [155, 378, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [317, 415, 140, 60]}] \n Frame 12: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [225, 325, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [460, 352, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [152, 385, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [318, 416, 140, 60]}] \n Frame 13: [{\"id\": 0, \"name\": \"mug debris 1\", \"box\": [225, 325, 120, 100]}, {\"id\": 1, \"name\": \"mug debris 2\", \"box\": [460, 352, 80, 90]}, {\"id\": 2, \"name\": \"mug debris 3\", \"box\": [152, 385, 70, 60]}, {\"id\": 3, \"name\": \"mug debris 4\", \"box\": [318, 416, 140, 60]}]",
+        "Frames": {
+            "1": [
+                {
+                    "id": 0,
+                    "name": "mug",
+                    "box": [
+                        257,
+                        115,
+                        245,
+                        205
+                    ]
+                }
+            ],
+            "2": [
+                {
+                    "id": 0,
+                    "name": "mug",
+                    "box": [
+                        257,
+                        145,
+                        245,
+                        205
+                    ]
+                }
+            ],
+            "3": [
+                {
+                    "id": 0,
+                    "name": "mug",
+                    "box": [
+                        257,
+                        175,
+                        245,
+                        205
+                    ]
+                }
+            ],
+            "4": [
+                {
+                    "id": 0,
+                    "name": "mug",
+                    "box": [
+                        257,
+                        205,
+                        245,
+                        205
+                    ]
+                }
+            ],
+            "5": [
+                {
+                    "id": 0,
+                    "name": "mug",
+                    "box": [
+                        257,
+                        235,
+                        245,
+                        190
+                    ]
+                }
+            ],
+            "6": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        280,
+                        278,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        430,
+                        280,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        200,
+                        305,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        300,
+                        408,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "7": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        270,
+                        290,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        440,
+                        295,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        185,
+                        320,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        305,
+                        410,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "8": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        260,
+                        300,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        450,
+                        310,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        175,
+                        335,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        308,
+                        412,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "9": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        250,
+                        308,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        455,
+                        325,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        165,
+                        350,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        312,
+                        413,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "10": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        240,
+                        315,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        458,
+                        335,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        160,
+                        365,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        315,
+                        414,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "11": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        230,
+                        320,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        460,
+                        345,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        155,
+                        378,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        317,
+                        415,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "12": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        225,
+                        325,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        460,
+                        352,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        152,
+                        385,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        318,
+                        416,
+                        140,
+                        60
+                    ]
+                }
+            ],
+            "13": [
+                {
+                    "id": 0,
+                    "name": "mug debris 1",
+                    "box": [
+                        223,
+                        328,
+                        120,
+                        100
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "mug debris 2",
+                    "box": [
+                        460,
+                        356,
+                        80,
+                        90
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "mug debris 3",
+                    "box": [
+                        150,
+                        388,
+                        70,
+                        60
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "mug debris 4",
+                    "box": [
+                        319,
+                        417,
+                        140,
+                        60
+                    ]
+                }
+            ]
+        }
+    }
+}
