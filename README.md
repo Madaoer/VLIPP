@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ## Data Structure
 <details>
-  <summary> (click to expand;) </summary>
+  <summary> (click to expand) </summary>
 
       data/
       ├── animation_video/      # Synthetic motion videos
