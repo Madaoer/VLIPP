@@ -4,8 +4,7 @@ import json
 import re
 import os
 import argparse
-from pathlib import Path
-from VLIPP.utils.helpers import encode_image, visual_vlm_plan, get_vlm_plan_to_json, io_from_json
+from VLIPP.utils.helpers import encode_image, get_vlm_plan_to_json, io_from_json
 from VLIPP.utils.template import messages
 
 def get_recaption_and_label(prompt, first_frame_path, exp_name):

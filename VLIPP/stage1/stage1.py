@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     processor = AutoProcessor.from_pretrained(grounding_model_path)
     grounding_model = AutoModelForZeroShotObjectDetection.from_pretrained(grounding_model_path).to(DEVICE)
-    data_dict = detect_and_segment(data_dict, output_root=output_root, sam2_model=sam2_model, sam2_predictor=sam2_predictor, processor=processor, grounding_model=grounding_model)
+    data_dict = detect_and_segment(data_dict, output_root=output_root, sam2_predictor=sam2_predictor, processor=processor, grounding_model=grounding_model)
     
     # --- step 3 ---
     data_dict = vlm_planning(data_dict)
